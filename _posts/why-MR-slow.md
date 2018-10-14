@@ -1,7 +1,7 @@
 ---
 title: 传统的MapReduce框架慢在哪里
 tags: MapReduce
-categories: 数据
+categories: 数据工程
 ---
 
 本文转载于[传统的MapReduce框架慢在那里](http://jerryshao.me/2013/04/15/%E4%BC%A0%E7%BB%9F%E7%9A%84MapReduce%E6%A1%86%E6%9E%B6%E6%85%A2%E5%9C%A8%E5%93%AA%E9%87%8C/),翻译自[Shark: SQL and Rich Analytics at Scale](http://shark.cs.berkeley.edu/)的论文第七章节，从理论上讨论了相比于Hive，Shark的优势在哪里，原文可见http://www.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-214.pdf.

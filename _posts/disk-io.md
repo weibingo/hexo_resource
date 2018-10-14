@@ -4,7 +4,7 @@ date: 2018-06-29 20:49:58
 tags:
  - IO
  - 数据
-categories: 数据
+categories: 数据工程
 ---
 最近一直在看HBase底层存储，想更深入的理解HBase采用LSM结构，而不是B-tree的缘由，所以需要更深入的理解磁盘存储。
 本文转载于[磁盘I/O那些事](https://tech.meituan.com/about-desk-io.html)，该文详细讲解了磁盘结构，磁盘如何存储数据，如果读取数据，以及磁盘读写的IO过程。

@@ -1,7 +1,7 @@
 ---
 title: Performance optimizations in Apache Impala
 tags: impala
-categories: 数据
+categories: 数据工程
 ---
 ### 历史和动机
 #### SQL on Apache Hadoop

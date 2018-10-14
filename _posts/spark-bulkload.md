@@ -4,7 +4,7 @@ date: 2018-06-12 20:50:49
 tags: 
   - spark
   - hbase
-categories: 数据
+categories: 数据工程
 ---
 本文介绍HBase在大数据量导入时Bulkload的操作过程，以及使用spark加速整个Bulkload。
 

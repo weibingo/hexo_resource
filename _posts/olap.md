@@ -1,9 +1,9 @@
 ---
-title: olap引擎思维导图
+title: OLAP引擎思维导图
 date: 2018-08-09 21:38:52
 tags:
- - olap
-categories: 数据
+ - OLAP
+categories: 数据工程
 ---
 
 ### 联机分析处理(OLAP)
