@@ -11,9 +11,9 @@ categories: HBase
 
 ### 导出遇到的问题
 导出后，出现部分用户，同一个用户多条数据（两条为主），见下图：
-![](/hbase-case-batch/tag-1.png)
+![](http://hexo-1256892004.cos.ap-beijing.myqcloud.com/hbase-case-batch/tag-1.png)
 
-![](/hbase-case-batch/tag-2.png)
+![](http://hexo-1256892004.cos.ap-beijing.myqcloud.com/hbase-case-batch/tag-2.png)
 
 从图中可以看出，出现了重复用户uid。
 <!--more-->

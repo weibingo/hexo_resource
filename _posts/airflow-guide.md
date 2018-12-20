@@ -49,8 +49,7 @@ branching = BranchPythonOperator(
 )
 ```
 分支操作，通过python_callable返回值选定下一个依赖执行的task，即python_callable返回值等于下一个依赖task的task_id，而其他未被选中的task，则会被skipped。如果在task后面还有依赖join，此时需要将join的trigger_rule设置为‘one_success’ ，如下图所示：
-
-![](/images/branch_operator.jpg)
+![](http://hexo-1256892004.cos.ap-beijing.myqcloud.com/airflow-guide/branch_operator.png)
 
 #### SubDagOperator
 当dag中某部分tasks结构完整，功能统一，能够独立提供某项流程时。就像软件开发中模块划分一样，我们也希望将这部分task依赖抽离出来，独立成为单一的DAG，且能够很好的嵌入其他DAG，完成整个流程。这便出现了subDag。
@@ -71,8 +70,7 @@ dag_subdag = DAG(
     )
 ```
 添加subDag后的Dag如：
-
-![](/images/sub_dag.jpg)
+![](http://hexo-1256892004.cos.ap-beijing.myqcloud.com/airflow-guide/sub_dag.png)
 
 select-1作为是Dag的一个task，内部则是一个subDag，也有完整的task任务关系。
 
