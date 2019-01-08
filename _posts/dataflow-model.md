@@ -6,7 +6,9 @@ tags:
  - 流式计算
  - spark
  - flink
-categories: 数据工程
+categories: 
+ - 数据工程
+ - 流式计算
 ---
 Dataflow模型：是谷歌在处理无边界数据的实践中，总结的一套SDK级别的解决方案，其目标是做到在非有序的，无边界的海量数据上，基于事件时间进行运算，并能根据数据自身的属性进行window操作，同时数据处理过程的正确性，延迟，代价可根据需求进行灵活的调整配置。
 ### DataFlow模型核心
@@ -30,7 +32,8 @@ Dataflow模型里强调的两个时间概念：Event time和 Process time：
 * 一个增量更新模型，可以将数据增量更新的能力融合进上述窗口和结果触发模型中。（**解决how问题**）
 ### 三个模型
 #### windowing
-
+统计窗口，对于unbounded data，只能基于windowing做处理。windowing有以下三种：
+![](https://hexo-1256892004.cos.ap-beijing.myqcloud.com/dataflow-model/windowing.png)
 
 ### 参考
 https://www.cnblogs.com/fxjwind/p/5124174.html
