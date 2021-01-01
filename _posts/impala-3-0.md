@@ -1,5 +1,6 @@
 ---
 title: Performance optimizations in Apache Impala
+date: 2018-09-12 21:10:36
 tags: impala
 categories: 数据工程
 ---

@@ -30,8 +30,8 @@ highlight_theme: default
 # ---------------
 social:
   #icon_name: url
-  github: https://github.com/weibingo
-  book: https://www.jianshu.com/u/0352716a8f7d
+  github fa: https://github.com/weibingo
+  book fa: https://www.jianshu.com/u/0352716a8f7d
 
 # Algolia search
 # ---------------
@@ -47,7 +47,7 @@ algolia_search:
 # Local search
 # ---------------
 local_search:
-  enable: false
+  enable: true
   labels:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}"
@@ -152,7 +152,7 @@ slide:
 # Share System
 # ---------------
 addThis:
-  enable: false
+  enable: true
   #pubid: 
 
 # sharejs:
@@ -188,8 +188,8 @@ disqus:
 #valine comment system. https://valine.js.org
 valine:
   enable: true # if you want use valine,please set this value is ture
-  appId: XgGy6LMJwHNBhv9MP0Ni1qhP-gzGzoHsz # leancloud application app id
-  appKey: Wb6uj1girqVXuxbozmfhGv6T # leancloud application app key
+  appId: dEfDWKbVoLq95IOjY2Wucz01-9Nh9j0Va # leancloud application app id
+  appKey: CWRYxwiLTYcAG0OcWmKl7Ez0 # leancloud application app key
   notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
   verify: false # valine verify code (true/false)
   pageSize: 10 # comment list page size
@@ -200,7 +200,9 @@ valine:
 
 # Footer Settings
 # ---------------
-since: 2013
+since: 2017
+
+footer_custom_text: hitokoto
 
 ICP:
   enable: false

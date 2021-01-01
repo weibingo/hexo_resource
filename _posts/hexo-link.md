@@ -1,5 +1,6 @@
 ---
 title: hexo搭建博客教程相关链接
+date: 2018-06-04 16:16:36
 tags: hexo
 categories: hexo
 ---
