@@ -31,7 +31,7 @@ Doris 的系统架构如下:
 
 **Doris 主要分为 FE 和 BE 两种角色，FE 主要负责查询的编译，分发和元数据管理（基于内存，类似 HDFS NN）；BE 主要负责查询的执行和存储系统。**
 
-![dorisfe.png](https://hexo-1256892004.cos.ap-beijing.myqcloud.com/doris/20201228001916-r6dgky4-doris-fe.png)
+![](https://hexo-1256892004.cos.ap-beijing.myqcloud.com/doris/20201228001916-r6dgky4-doris-fe.png)
 <!-- more -->
 ## 1.2Doris 数据模型
 
@@ -270,7 +270,7 @@ ROLLUP 表的基本作用，在于在 Base 表的基础上，获得更粗粒度�
 
 Doris 的 RollUp 表 和 Kylin 的 Cuboid 一样，**在查询时不需要显示指定**，系统内部会根据查询条件进行智能路由。下图是个 RollUp 表的示意。
 
-![rollup.png](https://hexo-1256892004.cos.ap-beijing.myqcloud.com/doris/20201228001950-0tz07wg-rollup.png)
+![](https://hexo-1256892004.cos.ap-beijing.myqcloud.com/doris/20201228001950-0tz07wg-rollup.png)
 
 **Doris RollUp 表的路由规则**如下：
 
@@ -353,9 +353,9 @@ Doris 会自动命中这个 ROLLUP 表，从而只需扫描极少的数据量，
 
 为了解决这两个问题，常见的思路就是及时删除不需要的、过期的数据，以及将小的文件 Merge 为大的文件。
 
-![merge.png](https://hexo-1256892004.cos.ap-beijing.myqcloud.com/doris/20201228002026-7l9ng8w-merge.png)
+![](https://hexo-1256892004.cos.ap-beijing.myqcloud.com/doris/20201228002026-7l9ng8w-merge.png)
 
-![deltacompaction.png](https://hexo-1256892004.cos.ap-beijing.myqcloud.com/doris/20201228002106-csq5fmi-delta-compaction.png)
+![](https://hexo-1256892004.cos.ap-beijing.myqcloud.com/doris/20201228002106-csq5fmi-delta-compaction.png)
 
 如上图所示，Mesa 的 Merge 策略和 HBase 很像。
 
@@ -568,17 +568,17 @@ Doris 的 Table 支持二级分区，可以先按照日期列进行一级分区�
 
 Tablet 会按照一定大小（**256M**）拆分为多个 segment 文件， segment 是列存的，但是会按行（**1024 行，可配置**）拆分为多个 rowblock。
 
-![storagefile.png](https://hexo-1256892004.cos.ap-beijing.myqcloud.com/doris/20201228002138-akghkdf-storage-file.png)
+![](https://hexo-1256892004.cos.ap-beijing.myqcloud.com/doris/20201228002138-akghkdf-storage-file.png)
 
 **Doris 的数据文件**
 
 Doris 的数据文件如下图所示：
 
-![file.png](https://hexo-1256892004.cos.ap-beijing.myqcloud.com/doris/20201228002150-eolrbk7-file.png)
+![](https://hexo-1256892004.cos.ap-beijing.myqcloud.com/doris/20201228002150-eolrbk7-file.png)
 
 Doris 数据文件 Stream 的例子：
 
-![stream.png](https://hexo-1256892004.cos.ap-beijing.myqcloud.com/doris/20201228002202-jypfdh1-stream.png)
+![](https://hexo-1256892004.cos.ap-beijing.myqcloud.com/doris/20201228002202-jypfdh1-stream.png)
 
 **前缀索引**
 
@@ -595,7 +595,7 @@ Doris 数据文件 Stream 的例子：
 
 Index 文件：
 
-![index.png](https://hexo-1256892004.cos.ap-beijing.myqcloud.com/doris/20201228002214-j9xyxca-index.png)
+![](https://hexo-1256892004.cos.ap-beijing.myqcloud.com/doris/20201228002214-j9xyxca-index.png)
 
 **Min，Max 索引和 Bloomfilter**
 
